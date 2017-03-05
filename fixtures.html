@@ -1,0 +1,19 @@
+<script type="text/x-handlebars" data-template-name="index">
+         <h2>Models using core concepts: </h2>
+         <p>{{#link-to 'posts'}}Click for books Detail{{/link-to}}</p>
+      </script>
+
+      <script type="text/x-handlebars" data-template-name="posts">
+         <h2>Books Name and Author: </h2>
+         {{#each post in controller}}
+            <p><b>{{post.book}}</b></p>
+            <p><i>{{post.author}}<i></p>
+         {{/each}}
+      </script>
+
+             <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/ember-template-compiler-2.0.1.js"></script>
+  <script src="js/libs/ember-2.0.1.debug.js"></script>
+  <script src="tests/runner.js"></script>
+  <script src="js/fixtures.js"></script>
+  <script src="js/libs/emberdata.js"></script>

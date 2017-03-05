@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>Emberjs Template</title>
+      <!-- CDN's-->
+       <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/ember-template-compiler-2.0.1.js"></script>
+  <script src="js/libs/ember-2.0.1.debug.js"></script>
+  <script src="tests/runner.js"></script>
+   </head>
+   <body>
+      <script type="text/x-handlebars" data-template-name="application">
+         <!-- name of the template is application and it is default template -->
+         <div>
+            {{outlet}}
+         </div>
+         <!-- call the name value -->
+         <h2><i>{{App.name}}</i></h2>
+      </script>
+
+      <script type="text/javascript">
+         //creating the App varible by the Ember.Application's create() method
+         var App = Ember.Application.create()
+        //assigning value to the name variable
+         App.name = "Hello... Welcome to TutorialsPoint!";
+      </script>
+   </body>
+</html>
